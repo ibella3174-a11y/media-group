@@ -1,147 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>High Posting Jobs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+        }
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        body {
+            background-color: #f8fafc;
+            color: var(--text-dark);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
 
-<style>
-    body{
-        margin:0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(135deg,#eaf7f6,#f2fbff);
-        display:flex;
-        justify-content:center;
-        padding:40px 15px;
-    }
+        .container {
+            max-width: 500px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+        }
 
-    .card{
-        background:#fff;
-        max-width:420px;
-        width:100%;
-        padding:30px 25px;
-        border-radius:18px;
-        box-shadow:0 10px 30px rgba(0,0,0,0.08);
-        text-align:center;
-    }
+        /* Icon Styling & Animation */
+        .icon-box {
+            font-size: 5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
 
-    .card h1{
-        font-size:22px;
-        line-height:1.4;
-        margin-bottom:10px;
-        font-weight:700;
-    }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
 
-    .highlight{
-        color:#e63946;
-    }
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -2px;
+        }
 
-    .sub{
-        font-weight:700;
-        margin:15px 0 20px;
-        text-decoration: underline;
-    }
+        p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
 
-    .list{
-        text-align:left;
-        margin-bottom:25px;
-    }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
 
-    .item{
-        display:flex;
-        gap:12px;
-        margin-bottom:14px;
-        font-size:15px;
-        line-height:1.5;
-        align-items:flex-start;
-    }
+        .btn:hover {
+            background-color: #4f46e5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
 
-    .item i{
-        color:#20b26b;
-        font-size:18px;
-        margin-top:2px;
-    }
+        .footer-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-    .confirm{
-        border-left:5px solid #20b26b;
-        background:#f1fff7;
-        padding:15px;
-        border-radius:10px;
-        font-size:14px;
-        margin-bottom:25px;
-        text-align:left;
-    }
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
 
-    .confirm i{
-        color:#20b26b;
-        margin-right:6px;
-    }
-
-    .btn{
-        display:block;
-        width:100%;
-        padding:16px;
-        background:#20b26b;
-        color:#fff;
-        text-decoration:none;
-        font-weight:700;
-        border-radius:10px;
-        font-size:15px;
-        transition:0.3s;
-    }
-
-    .btn:hover{
-        background:#189a5b;
-    }
-
-    .footer{
-        margin-top:20px;
-        font-size:12px;
-        color:#777;
-    }
-</style>
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="card">
-    <h1>
-        In order to<br>
-        <span class="highlight">Start Earning Good Money With<br>High Digital Skills…</span>
-    </h1>
-
-    <div class="sub">You Will Need These 3 Things</div>
-
-    <div class="list">
-        <div class="item">
-            <i class="fa fa-check-circle"></i>
-            <div>An internet-connected smartphone, tablet or laptop</div>
+    <div class="container">
+        <div class="icon-box">
+            <i class="fas fa-link-slash"></i>
         </div>
+        
+        <h1>404</h1>
+        <p>We searched everywhere, but we couldn't find the page you're looking for. It might have moved to a different universe.</p>
+        
+        <a href="#" class="btn">
+            <i class="fas fa-house"></i> Back to Homepage
+        </a>
 
-        <div class="item">
-            <i class="fa fa-check-circle"></i>
-            <div>1–2 hrs a day</div>
-        </div>
-
-        <div class="item">
-            <i class="fa fa-check-circle"></i>
-            <div>A spirit of implementation and dedication</div>
+        <div class="footer-links">
+            <a href="#"><i class="fas fa-envelope"></i> Report Issue</a>
+            <a href="#"><i class="fas fa-magnifying-glass"></i> Search Site</a>
         </div>
     </div>
-
-    <div class="confirm">
-        <i class="fa fa-check-square"></i>
-        <strong>YES!</strong> I have these 3 things and I am going to apply this
-        life-changing information once it is in my hands.
-    </div>
-
-    <a href="https://chat.whatsapp.com/EXU72ice0N74ICZ25wrwUN" class="btn">CLICK HERE TO REGISTER NOW!</a>
-
-    <div class="footer">© 2025 High Posting Jobs</div>
-</div>
 
 </body>
 </html>
