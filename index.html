@@ -3,100 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>High Posting Jobs</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="error-container">
-  <div class="error-content">
-    <div class="icon-wrapper">
-      <i class="fa-solid fa-cloud main-cloud"></i>
-      <i class="fa-solid fa-circle-exclamation alert-dot"></i>
-    </div>
-    
-    <p class="error-message">There was an error loading your data</p>
-    
-    <button id="retryBtn" class="retry-btn">
-      <i class="fa-solid fa-rotate-right"></i> Try Again
-    </button>
-  </div>
-</div>
 <style>
-  body {
-  margin: 0;
-  background-color: #0b1124; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Arial', sans-serif;
-}
+    body{
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg,#eaf7f6,#f2fbff);
+        display:flex;
+        justify-content:center;
+        padding:40px 15px;
+    }
 
-.error-content {
-  text-align: center;
-  color: #ffffff;
-}
-.icon-wrapper {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 25px;
-}
+    .card{
+        background:#fff;
+        max-width:420px;
+        width:100%;
+        padding:30px 25px;
+        border-radius:18px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        text-align:center;
+    }
 
-.main-cloud {
-  font-size: 80px;
-  color: #d1d5db; 
-}
+    .card h1{
+        font-size:22px;
+        line-height:1.4;
+        margin-bottom:10px;
+        font-weight:700;
+    }
 
-.alert-dot {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  font-size: 24px;
-  color: #8e94a5;
-  background: #0b1124;
-  border-radius: 50%;
-}
+    .highlight{
+        color:#e63946;
+    }
 
-.error-message {
-  color: #717b91;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
+    .sub{
+        font-weight:700;
+        margin:15px 0 20px;
+        text-decoration: underline;
+    }
 
-.retry-btn {
-  background: none;
-  border: none;
-  color: #fcc419;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0 auto;
-  transition: transform 0.2s ease;
-}
-.retry-btn:active {
-  transform: scale(0.95);
-}
+    .list{
+        text-align:left;
+        margin-bottom:25px;
+    }
 
-.retry-btn i {
-  font-size: 16px;
-}
+    .item{
+        display:flex;
+        gap:12px;
+        margin-bottom:14px;
+        font-size:15px;
+        line-height:1.5;
+        align-items:flex-start;
+    }
+
+    .item i{
+        color:#20b26b;
+        font-size:18px;
+        margin-top:2px;
+    }
+
+    .confirm{
+        border-left:5px solid #20b26b;
+        background:#f1fff7;
+        padding:15px;
+        border-radius:10px;
+        font-size:14px;
+        margin-bottom:25px;
+        text-align:left;
+    }
+
+    .confirm i{
+        color:#20b26b;
+        margin-right:6px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        padding:16px;
+        background:#20b26b;
+        color:#fff;
+        text-decoration:none;
+        font-weight:700;
+        border-radius:10px;
+        font-size:15px;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#189a5b;
+    }
+
+    .footer{
+        margin-top:20px;
+        font-size:12px;
+        color:#777;
+    }
 </style>
-<script>
-  document.getElementById('retryBtn').addEventListener('click', function() {
-  const icon = this.querySelector('i');
-    
-  icon.classList.add('fa-spin');
-
-  this.style.opacity = "0.5";
-  this.style.pointerEvents = "none";
-  setTimeout(() => {
-    icon.classList.remove('fa-spin');
-    this.style.opacity = "1";
-    this.style.pointerEvents = "auto";
-    console.log("Data reload triggered!");
-  }, 2000);
-});
-</script>
 </head>
+
+<body>
+
+<div class="card">
+    <h1>
+        In order to<br>
+        <span class="highlight">Start Earning Good Money With<br>High Digital Skills…</span>
+    </h1>
+
+    <div class="sub">You Will Need These 3 Things</div>
+
+    <div class="list">
+        <div class="item">
+            <i class="fa fa-check-circle"></i>
+            <div>An internet-connected smartphone, tablet or laptop</div>
+        </div>
+
+        <div class="item">
+            <i class="fa fa-check-circle"></i>
+            <div>1–2 hrs a day</div>
+        </div>
+
+        <div class="item">
+            <i class="fa fa-check-circle"></i>
+            <div>A spirit of implementation and dedication</div>
+        </div>
+    </div>
+
+    <div class="confirm">
+        <i class="fa fa-check-square"></i>
+        <strong>YES!</strong> I have these 3 things and I am going to apply this
+        life-changing information once it is in my hands.
+    </div>
+
+    <a href="https://chat.whatsapp.com/GMD9kOc71pw3hNXLClagnS" class="btn">CLICK HERE TO REGISTER NOW!</a>
+
+    <div class="footer">© 2025 High Posting Jobs</div>
+</div>
+
+</body>
 </html>
